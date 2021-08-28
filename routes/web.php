@@ -51,7 +51,7 @@ route::get('/Factures',[InvoiceController::class,'allInvoice'])->name('show.invo
 route::get('/Factures/add',[InvoiceController::class,'addInvoice'])->name('add.invoice');
 
 
-//SliderContrller
+//SliderController
 route::get('/slider/show',[HomeController::class,'showSlider'])->name('slider.store');
 route::post('/slider/update',[HomeController::class,'updateSlider'])->name('update.slide');
 route::post('/slider/update/image',[HomeController::class,'updateSliderImage'])->name('update.slide.image');

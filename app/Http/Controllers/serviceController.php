@@ -24,7 +24,7 @@ class serviceController extends Controller
        // dd($request);
         if($request->method() == 'GET'){
             return view('backend.service.add');
-        }else{
+        }else if($request->method() == 'POST'){
             $validateData = $request->validate(
 
                 [
@@ -61,15 +61,13 @@ class serviceController extends Controller
                 return Redirect()->route('show.service');
 
         }
+        return Redirect()->back();
 
 
     }
 
     public function editService(Request $request){
-
-
             $id = $request->id;
-
             $service = service::find($id);
             if($service==null){
                 return Redirect()->route('show.service');
@@ -83,11 +81,10 @@ class serviceController extends Controller
                 unlink($old_icon);
                 service::find($id)->delete();
                 return Redirect()->back();
-
             }else{
                 return view('backend.service.edit',compact('service'));
             }
-          
+
 
     }
 
