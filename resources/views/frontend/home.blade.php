@@ -6,14 +6,7 @@
 @include('frontend.body.portfolio')
 @include('frontend.body.industrie')
 @include('frontend.body.competence')
-@include('frontend.body.avis')
+{{-- @include('frontend.body.avis') --}}
 @include('frontend.body.about_me')
 @include('frontend.body.contact')
 @include('frontend.footer.footer')
-
-
-
-
-
-
-

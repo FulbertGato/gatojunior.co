@@ -19,7 +19,7 @@
 
                                     @yield('content')
 
-                                </div>
+                                
                             </div>
                         </div>
                         <!-- end page title -->

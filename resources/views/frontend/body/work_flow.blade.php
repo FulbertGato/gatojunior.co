@@ -4,8 +4,8 @@
 			<div class="row justify-content-center">
 				<div class="col-lg-8">
 					<div class="page-headings text-center">
-						<h2 class="mb15">Development Process We Follow</h2>
-						<p>Our design process follows a proven approach. We begin with a deep understanding of your needs and create a planning template.</p>
+						<h2 class="mb15">Processus de développement que nous suivons</h2>
+						<p>Notre processus de conception suit une approche éprouvée. Nous commençons par une compréhension approfondie de vos besoins et créons un modèle de planification.</p>
 					</div>
 				</div>
 			</div>
@@ -17,7 +17,7 @@
 							<div class="process-icon">
 								<img src="{{asset('frontend/images/icons/pencil.svg')}}" alt="service" class="icon70 mb20">
 							</div>
-							<h4>Requirement Gathering</h4>
+							<h4>Recueil des besoins</h4>
 							<p>Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. </p>
 						</div>
 					</div>
@@ -53,7 +53,7 @@
 							<div class="process-icon">
 								<img src="{{asset('frontend/images/icons/computer.svg')}}" alt="service" class="icon70 mb20">
 							</div>
-							<h4>Development</h4>
+							<h4>Développement</h4>
 							<p>Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. </p>
 						</div>
 					</div>
@@ -65,7 +65,7 @@
 							<div class="process-icon">
 								<img src="{{asset('frontend/images/icons/quality-check.svg')}}" alt="service" class="icon70 mb20">
 							</div>
-							<h4>Quality Assurance</h4>
+							<h4>Assurance de qualité</h4>
 							<p>Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. </p>
 						</div>
 					</div>
@@ -78,7 +78,7 @@
 							<div class="process-icon">
 								<img src="{{asset('frontend/images/icons/start-up.svg')}}" alt="service" class="icon70 mb20">
 							</div>
-							<h4>Deployment</h4>
+							<h4>Déploiement</h4>
 							<p>Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. </p>
 						</div>
 					</div>
@@ -91,7 +91,7 @@
 							<div class="process-icon">
 								<img src="{{asset('frontend/images/icons/customer-support.svg')}}" alt="service" class="icon70 mb20">
 							</div>
-							<h4>Support & Maintenance</h4>
+							<h4>Assistance et maintenance</h4>
 							<p>Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi.</p>
 						</div>
 					</div>

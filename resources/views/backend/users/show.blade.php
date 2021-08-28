@@ -23,7 +23,7 @@
 <div class="col-lg-12">
 <div>
 <div>
-    <button type="button" class="btn btn-success waves-effect waves-light mb-3"><i class="mdi mdi-plus me-1"></i> Ajouter Utilisateurs</button>
+    <a href="{{route('add.user')}}" type="button" class="btn btn-success waves-effect waves-light mb-3"><i class="mdi mdi-plus me-1"></i> Ajouter Utilisateurs</a>
 </div>
 
 <div class="table-responsive mb-4">
@@ -74,8 +74,8 @@
                     <div class="badge bg-pill bg-soft-success font-size-12">Active</div>
                 </td>
                 <td>
-                    <a href="javascript:void(0);" class="px-3 text-primary"><i class="uil uil-pen font-size-18"></i></a>
-                    <a href="javascript:void(0);" class="px-3 text-danger"><i class="uil uil-trash-alt font-size-18"></i></a>
+                    <a href="{{url('utilisateurs/edit/'.$user->id)}}" class="px-3 text-warning"><i  class="uil uil-pen font-size-18"></i></a>
+                    <a href="{{url('utilisateurs/delete/'.$user->id)}}" class="px-3 text-danger" onclick="return confirm('Vous allez supprimer {{$user->name}} ')"><i class="uil uil-trash-alt font-size-18"></i></a>
                 </td>
             </tr>
             @endforeach

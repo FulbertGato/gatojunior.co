@@ -4,7 +4,7 @@
 			<div class="row">
 				<div class="col-lg-4 vcenter">
 					<div class="hero-content-pp pera-block">
-						<span class="sub-heading2 mb15 r-bg-x">Hello, I'm</span>
+						<span class="sub-heading2 mb15 r-bg-x">Salut, je suis</span>
 						<h1 class="mb20">{{$slide->name}}</h1>
 						<h5>{{$slide->short_des}}</h5>
 						<p class="h-light" data-aos="fade-in" data-aos-delay="500">{{$slide->long_des}}</p>

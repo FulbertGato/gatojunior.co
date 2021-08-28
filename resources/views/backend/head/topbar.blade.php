@@ -33,13 +33,7 @@
                             <i class="fa fa-fw fa-bars"></i>
                         </button>
 
-                        <!-- App Search-->
-                        <form class="app-search d-none d-lg-block">
-                            <div class="position-relative">
-                                <input type="text" class="form-control" placeholder="Search...">
-                                <span class="uil-search"></span>
-                            </div>
-                        </form>
+                        
                     </div>
 
                     <div class="d-flex">
@@ -66,59 +60,6 @@
                         </div>
 
 
-
-                        <div class="dropdown d-none d-lg-inline-block ms-1">
-                            <button type="button" class="btn header-item noti-icon waves-effect"
-                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="uil-apps"></i>
-                            </button>
-                            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end">
-                                <div class="px-lg-2">
-                                    <div class="row g-0">
-                                        <div class="col">
-                                            <a class="dropdown-icon-item" href="#">
-                                                <img src="assets/images/brands/github.png" alt="Github">
-                                                <span>GitHub</span>
-                                            </a>
-                                        </div>
-                                        <div class="col">
-                                            <a class="dropdown-icon-item" href="#">
-                                                <img src="assets/images/brands/bitbucket.png" alt="bitbucket">
-                                                <span>Bitbucket</span>
-                                            </a>
-                                        </div>
-                                        <div class="col">
-                                            <a class="dropdown-icon-item" href="#">
-                                                <img src="assets/images/brands/dribbble.png" alt="dribbble">
-                                                <span>Dribbble</span>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div class="row g-0">
-                                        <div class="col">
-                                            <a class="dropdown-icon-item" href="#">
-                                                <img src="assets/images/brands/dropbox.png" alt="dropbox">
-                                                <span>Dropbox</span>
-                                            </a>
-                                        </div>
-                                        <div class="col">
-                                            <a class="dropdown-icon-item" href="#">
-                                                <img src="assets/images/brands/mail_chimp.png" alt="mail_chimp">
-                                                <span>Mail Chimp</span>
-                                            </a>
-                                        </div>
-                                        <div class="col">
-                                            <a class="dropdown-icon-item" href="#">
-                                                <img src="assets/images/brands/slack.png" alt="slack">
-                                                <span>Slack</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
                         <div class="dropdown d-none d-lg-inline-block ms-1">
                             <button type="button" class="btn header-item noti-icon waves-effect" data-bs-toggle="fullscreen">
                                 <i class="uil-minus-path"></i>
@@ -132,7 +73,7 @@
                                 data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <img class="rounded-circle header-profile-user" src="{{asset('assets/images/users/avatar-4.jpg')}}"
                                     alt="Header Avatar">
-                                <span class="d-none d-xl-inline-block ms-1 fw-medium font-size-15">Marcus</span>
+                                <span class="d-none d-xl-inline-block ms-1 fw-medium font-size-15">{{Auth::user()->name }}</span>
                                 <i class="uil-angle-down d-none d-xl-inline-block font-size-15"></i>
                             </button>
                             <div class="dropdown-menu dropdown-menu-end">
@@ -141,7 +82,7 @@
                                 <a class="dropdown-item" href="#"><i class="uil uil-wallet font-size-18 align-middle me-1 text-muted"></i> <span class="align-middle">My Wallet</span></a>
                                 <a class="dropdown-item d-block" href="#"><i class="uil uil-cog font-size-18 align-middle me-1 text-muted"></i> <span class="align-middle">Settings</span> <span class="badge bg-soft-success rounded-pill mt-1 ms-2">03</span></a>
                                 <a class="dropdown-item" href="#"><i class="uil uil-lock-alt font-size-18 align-middle me-1 text-muted"></i> <span class="align-middle">Lock screen</span></a>
-                                <a class="dropdown-item" href="#"><i class="uil uil-sign-out-alt font-size-18 align-middle me-1 text-muted"></i> <span class="align-middle">Sign out</span></a>
+                                <a class="dropdown-item" href="{{route('logout')}}"><i class="uil uil-sign-out-alt font-size-18 align-middle me-1 text-muted"></i> <span class="align-middle">Sign out</span></a>
                             </div>
                         </div>
 

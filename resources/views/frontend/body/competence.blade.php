@@ -4,8 +4,8 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="sec-heading text-center pera-block">
-						<h2><span class="ree-text rt40">Technologies</span> we work with</h2>
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+						<h2><span class="ree-text rt40">Technologies </span> avec lesquelles nous travaillons</h2>
+						<p></p>
 					</div>
 				</div>
 			</div>
@@ -101,30 +101,6 @@
 										<div class="col-lg-2 col-md-3 col-sm-4 col-6">
 											<div class="icon-with-title">
 												<a href="javascript:void(0)">
-													<div class="iwt-icon"> <img src="{{asset('frontend/images/icons/java.svg')}}" alt="Java">
-													</div>
-													<div class="iwt-content">
-														<p>Java</p>
-													</div>
-												</a>
-											</div>
-										</div>
-
-										<div class="col-lg-2 col-md-3 col-sm-4 col-6">
-											<div class="icon-with-title">
-												<a href="javascript:void(0)">
-													<div class="iwt-icon"> <img src="{{asset('frontend/images/icons/swift.svg')}}"
-															alt="Apswiftple"> </div>
-													<div class="iwt-content">
-														<p>Swift</p>
-													</div>
-												</a>
-											</div>
-										</div>
-
-										<div class="col-lg-2 col-md-3 col-sm-4 col-6">
-											<div class="icon-with-title">
-												<a href="javascript:void(0)">
 													<div class="iwt-icon"> <img src="{{asset('frontend/images/icons/pwa.svg')}}" alt="pwa">
 													</div>
 													<div class="iwt-content">
@@ -133,8 +109,6 @@
 												</a>
 											</div>
 										</div>
-
-
 									</div>
 								</div>
 							</div>
@@ -176,17 +150,7 @@
 												</a>
 											</div>
 										</div>
-										<div class="col-lg-2 col-md-3 col-sm-4 col-6">
-											<div class="icon-with-title">
-												<a href="javascript:void(0)">
-													<div class="iwt-icon"> <img src="{{asset('frontend/images/icons/typescript.svg')}}"
-															alt="typescript"> </div>
-													<div class="iwt-content">
-														<p>Typescript</p>
-													</div>
-												</a>
-											</div>
-										</div>
+										
 										<div class="col-lg-2 col-md-3 col-sm-4 col-6">
 											<div class="icon-with-title">
 												<a href="javascript:void(0)">
@@ -237,18 +201,6 @@
 							<div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3c">
 								<div class="tab-data-cont">
 									<div class="row justify-content-center">
-
-										<div class="col-lg-2 col-md-3 col-sm-4 col-6">
-											<div class="icon-with-title">
-												<a href="javascript:void(0)">
-													<div class="iwt-icon"> <img src="{{asset('frontend/images/icons/MariaDB.svg')}}"
-															alt="MariaDB"> </div>
-													<div class="iwt-content">
-														<p>MariaDB</p>
-													</div>
-												</a>
-											</div>
-										</div>
 										<div class="col-lg-2 col-md-3 col-sm-4 col-6">
 											<div class="icon-with-title">
 												<a href="javascript:void(0)">
@@ -260,17 +212,7 @@
 												</a>
 											</div>
 										</div>
-										<div class="col-lg-2 col-md-3 col-sm-4 col-6">
-											<div class="icon-with-title">
-												<a href="javascript:void(0)">
-													<div class="iwt-icon"> <img src="{{asset('frontend/images/icons/redis-official.svg')}}"
-															alt="redis"> </div>
-													<div class="iwt-content">
-														<p>Redis</p>
-													</div>
-												</a>
-											</div>
-										</div>
+										
 										<div class="col-lg-2 col-md-3 col-sm-4 col-6">
 											<div class="icon-with-title">
 												<a href="javascript:void(0)">
@@ -283,17 +225,7 @@
 											</div>
 										</div>
 
-										<div class="col-lg-2 col-md-3 col-sm-4 col-6">
-											<div class="icon-with-title">
-												<a href="javascript:void(0)">
-													<div class="iwt-icon"> <img src="{{asset('frontend/images/icons/postgresql-icon.svg')}}"
-															alt="postgresql-icon"> </div>
-													<div class="iwt-content">
-														<p>PostgreSQL</p>
-													</div>
-												</a>
-											</div>
-										</div>
+										
 
 										<div class="col-lg-2 col-md-3 col-sm-4 col-6">
 											<div class="icon-with-title">
@@ -420,17 +352,7 @@
 											</div>
 										</div>
 
-										<div class="col-lg-2 col-md-3 col-sm-4 col-6">
-											<div class="icon-with-title">
-												<a href="javascript:void(0)">
-													<div class="iwt-icon"> <img src="{{asset('frontend/images/icons/bigcommerce-icon.svg')}}"
-															alt="bigcommerce-icon"> </div>
-													<div class="iwt-content">
-														<p>Big Commerce</p>
-													</div>
-												</a>
-											</div>
-										</div>
+										
 
 										<div class="col-lg-2 col-md-3 col-sm-4 col-6">
 											<div class="icon-with-title">

@@ -16,35 +16,43 @@ use App\Http\Controllers\serviceController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-        /**Frontend All URl */
+Route::get('/logout', function () {
+    Auth::logout();
+    return Redirect()->route('login');
+})->name('logout');
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 
-        //Home
+return view('backend.dashboard');
+    //return view('dashboard');
+})->name('dashboard');
 
-        route::get('/',[HomeController::class,'homeU'])->name('home');
+/**Frontend All URl */
 
-        //demande devis
-        Route::get('/quote', function () {
-            return view('frontend.quote');
-        });
-        //portfolio
-        Route::get('/portfolio', function () {
-            return view('frontend.portfolio');
-        });
+//Home
 
-        Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+route::get('/',[HomeController::class,'homeU'])->name('home');
 
-        return view('backend.dashboard');
-            //return view('dashboard');
-        })->name('dashboard');
+//demande devis
+Route::get('/quote', function () {
+    return view('frontend.quote');
+})->name('quote');
 
-        Route::get('/logout', function () {
-            Auth::logout();
-            return Redirect()->route('login');
-        });
 
+
+//portfolio
+Route::prefix('portfolio')->group(function(){
+    Route::get('/', function () {return view('frontend.portfolio');})->name('portfolio');
+});
 //UserController routes
-route::get('/utilisateurs',[UserController::class,'allUser'])->name('show.user');
-route::get('/utilisateurs/add',[UserController::class,'addUser'])->name('add.user');
+Route::prefix('utilisateurs')->group(function(){
+
+    route::get('/',[UserController::class,'allUser'])->name('show.user');
+    route::get('/add',[UserController::class,'addUser'])->name('add.user');
+    route::post('/store',[UserController::class,'storeUser'])->name('store.user');
+    route::get('/edit/{id}',[UserController::class,'editUser'])->name('edit.user');
+    route::get('/delete/{id}',[UserController::class,'deleteUser'])->name('delete.user');
+    route::post('/update',[UserController::class,'updateUser'])->name('update.user');
+});
 
 //InvoiceContrller routes
 route::get('/Factures',[InvoiceController::class,'allInvoice'])->name('show.invoice');
@@ -52,13 +60,17 @@ route::get('/Factures/add',[InvoiceController::class,'addInvoice'])->name('add.i
 
 
 //SliderController
-route::get('/slider/show',[HomeController::class,'showSlider'])->name('slider.store');
-route::post('/slider/update',[HomeController::class,'updateSlider'])->name('update.slide');
-route::post('/slider/update/image',[HomeController::class,'updateSliderImage'])->name('update.slide.image');
+Route::prefix('slider')->group(function(){
+route::get('/show',[HomeController::class,'showSlider'])->name('slider.store');
+route::post('/update',[HomeController::class,'updateSlider'])->name('update.slide');
+route::post('/update/image',[HomeController::class,'updateSliderImage'])->name('update.slide.image');
+});
 
 //ServiceController routes
-route::get('/service',[serviceController::class,'allService'])->name('show.service');
-route::get('/service/add',[serviceController::class,'addService'])->name('add.service');
-route::post('/service/add',[serviceController::class,'addService'])->name('store.service');
-route::post('/service/edit/',[serviceController::class,'editService'])->name('edit.service');
-route::post('/service/update/',[serviceController::class,'updateService'])->name('update.service');
+Route::prefix('service')->group(function(){
+route::get('/',[serviceController::class,'allService'])->name('show.service');
+route::get('/add',[serviceController::class,'addService'])->name('add.service');
+route::post('/add',[serviceController::class,'addService'])->name('store.service');
+route::post('/edit',[serviceController::class,'editService'])->name('edit.service');
+route::post('/update',[serviceController::class,'updateService'])->name('update.service');
+});
