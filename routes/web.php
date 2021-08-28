@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\serviceController;
+use App\Http\Controllers\TravauxController;
 
 /*
 |--------------------------------------------------------------------------
@@ -36,13 +37,6 @@ route::get('/',[HomeController::class,'homeU'])->name('home');
 Route::get('/quote', function () {
     return view('frontend.quote');
 })->name('quote');
-
-
-
-//portfolio
-Route::prefix('portfolio')->group(function(){
-    Route::get('/', function () {return view('frontend.portfolio');})->name('portfolio');
-});
 //UserController routes
 Route::prefix('utilisateurs')->group(function(){
 
@@ -74,3 +68,12 @@ route::post('/add',[serviceController::class,'addService'])->name('store.service
 route::post('/edit',[serviceController::class,'editService'])->name('edit.service');
 route::post('/update',[serviceController::class,'updateService'])->name('update.service');
 });
+
+//TravauxController routes
+Route::prefix('travaux')->group(function(){
+    route::get('/',[TravauxController::class,'allTravaux'])->name('show.travaux');
+    route::get('/add',[TravauxController::class,'addTravaux'])->name('add.travaux');
+    route::post('/add',[TravauxController::class,'addTravaux'])->name('store.travaux');
+    route::post('/edit',[TravauxController::class,'editTravaux'])->name('edit.travaux');
+    route::post('/update',[TravauxController::class,'updateTravaux'])->name('update.travaux');
+    });

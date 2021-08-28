@@ -92,19 +92,7 @@ class serviceController extends Controller
 
 
 
-        $validateData = $request->validate(
-
-            [
-                'name_service' => 'string|required|min:4',
-                'description_service'=> 'string|required',
-                'image_service' => 'mimes:png,jpg,jpeg,svg',
-                'icon_service' =>  'mimes:png,jpg,jpeg,svg'
-            ],
-            [
-                'name_service.required' => ' Champ requis',
-            ]
-        );
-
+       
 
         $old_image = $request->old_image;
         $image_service = $request->file('image_service');
@@ -146,7 +134,7 @@ class serviceController extends Controller
             'description_service'=>$request->description_service,
         ]);
 
-        return Redirect()->back();
+        return Redirect()->route('show.service');
 
     }
 

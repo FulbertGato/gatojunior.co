@@ -10,17 +10,18 @@
 				 <div class="col-md-6">
 					<div class="col-lg-12">
 						<div class="sec-heading pera-block">
-							<span class="sub-heading mb15">More About Me</span>
-							<h2>Let Me Know Here</h2>
-							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium nesciunt accusantium eos quam obcaecati corporis veritatis rem ipsam! Sint optio et quos modi maiores quaerat itaque non. Ab, officiis alias.</p>
+							<span class="sub-heading mb15">A propos de moi</span>
+							
 
-							<p>Praesentium nesciunt accusantium eos quam obcaecati corporis veritatis rem ipsam! Sint optio et quos modi maiores quaerat itaque non. Ab, officiis alias. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium nesciunt accusantium eos quam obcaecati corporis veritatis rem ipsam! Sint optio et quos modi maiores quaerat itaque non. Ab, officiis alias.</p>
+							<p>Ingénieur en informatique, intéressé essentiellement par le développement Web et Mobiles. Passionné, j’apprécie découvrir et maîtriser des nouvelles technologies pour réaliser mes projets et trouver des solutions innovantes. Avec plus de 2 ans d'expérience, j'ai eu l'occasion de travailler sur de nombreux projets, ce qui m'a permis d'acquérir des compétences polyvalentes. Ainsi, j'interviens sur toutes les phases du projet dès l'analyse et la conception, jusqu'à le déploiement sur l'environnement de production.</p>
 
-							<h5 class="mt40">Follow Me on Social Media</h5>
+							<p>Dynamique et sociable, mon engagement dès mon plus jeune âge dans la vie associative m'a permis d'acquérir des compétences relationnelles et organisationnelles.</p>
+
+							<h5 class="mt40">Suivez-moi sur Mes réseaux sociaux</h5>
 							<ul class="footer_social">
 								<li><a href="#" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
 								<li> <a href="#" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
-								<li><a href="#" target="_blank"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
+								<li><a href="#" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a></li>
 								<li><a href="#" target="_blank"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
 								<li> <a href="#" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a> </li>
 							 </ul>

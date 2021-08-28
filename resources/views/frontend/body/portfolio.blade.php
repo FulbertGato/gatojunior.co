@@ -8,24 +8,27 @@
                 </div>
             </div>
             <div class="col-lg-6 col-sm-4 vcenter">
-                <div class="link-sol-header">
+               <!-- <div class="link-sol-header">
                     <a href="portfolio" class="ree-card-link">Voir tout <i class="fas fa-arrow-right fa-btn"></i></a>
-                </div>
+                </div> -->
             </div>
         </div>
         <div class="row mt60">
             <div class="col-lg-12">
                 <div class="full-work-block  owl-carousel">
 
+                    @foreach ( $travaux as $t )
                     <div class="fwb-main-x fwb-a">
                         <div class="work-thumbnails">
                         <a href="#"><img src="{{asset('frontend/images/portfolio/portfolio-1.jpg')}}" alt="portfolio reevan" class="img-fluid"> </a>
                         </div>
                         <div class="work-details">
-                            <p class="mb10">UX, UI, Graphic Design</p>
-                            <h4><a href="#"> Creative and minimal clothing label design</a> </h4>
+                            <p class="mb10">{{$t->nom}} : {{$t->technologie}}</p>
+                            <h4><a href="#"> {{$t->description}}</a> </h4>
                         </div>
                     </div>
+
+                    @endforeach
 
                 </div>
             </div>

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\slide;
 use App\Models\service;
+use App\Models\Travaux;
 use Illuminate\Http\Request;
 use Illuminate\Support\Carbon;
 use Intervention\Image\Facades\Image;
@@ -39,7 +40,7 @@ class HomeController extends Controller
             $up_location = 'frontend/images/others/';
             $last_img =  $up_location.$img_name;
             $slide_image->move($up_location,$img_name);
-           // unlink($old_image);
+         
             Slide::find($id)->update([
 
 
@@ -61,17 +62,12 @@ class HomeController extends Controller
                 'year_experience'=> 'required|integer',
                 'quantity_project'=> 'required|integer',
                 'client_reviews'=> 'required|integer',
-
-
             ],
             [
                 'name.required' => ' Champ requis',
             ]
         );
-        $id=1;
-
-        
-
+            $id=1;
             Slide::find($id)->update([
 
                 'name'=>$request->name,
@@ -85,21 +81,14 @@ class HomeController extends Controller
                 'client_reviews_text'=>$request->client_reviews_text,
                 'button_text'=>$request->button_text,
             ]);
-
-
-
-
-
         return Redirect()->back();
-
-
-
     }
 
     public function homeU(){
         $id_slide=1;
         $slide = slide::find($id_slide);
         $services = service::get();
-        return view('frontend.home', compact('slide','services'));
+        $travaux = Travaux::get();
+        return view('frontend.home', compact('slide','services','travaux'));
     }
 }

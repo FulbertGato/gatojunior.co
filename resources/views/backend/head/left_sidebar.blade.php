@@ -83,10 +83,10 @@
                                 </a>
                                 <ul class="sub-menu" aria-expanded="true">
                                     <li>
-                                        <a href="{{route('show.service')}}" >Liste des Travaux</a>
+                                        <a href="{{route('show.travaux')}}" >Liste des Travaux</a>
                                     </li>
                                     <li>
-                                        <a href="{{route('add.service')}}" >Ajouter un Travail</a>
+                                        <a href="{{route('add.travaux')}}" >Ajouter un Travail</a>
                                     </li>
 
                                 </ul>
