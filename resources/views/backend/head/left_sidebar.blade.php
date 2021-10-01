@@ -92,21 +92,7 @@
                                 </ul>
                             </li>
 
-                            <li class="menu-title">Applications</li>
-
-                            <li>
-                                <a href="calendar.html" class="waves-effect">
-                                    <i class="uil-calender"></i>
-                                    <span>Calendar</span>
-                                </a>
-                            </li>
-
-
-
-
-
-
-
+                            <li class="menu-title">Paiements</li>
                             <li>
                                 <a href="javascript: void(0);" class="has-arrow waves-effect">
                                     <i class="uil-invoice"></i>

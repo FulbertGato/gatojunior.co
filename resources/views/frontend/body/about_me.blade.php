@@ -19,9 +19,8 @@
 
 							<h5 class="mt40">Suivez-moi sur Mes réseaux sociaux</h5>
 							<ul class="footer_social">
-								<li><a href="#" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
 								<li> <a href="#" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
-								<li><a href="#" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+								<li><a href="https://github.com/FulbertGato" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a></li>
 								<li><a href="#" target="_blank"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
 								<li> <a href="#" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a> </li>
 							 </ul>

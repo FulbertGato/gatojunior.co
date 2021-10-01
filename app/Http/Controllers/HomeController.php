@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\slide;
+use App\Models\Contact;
 use App\Models\service;
 use App\Models\Travaux;
 use Illuminate\Http\Request;
@@ -90,5 +91,31 @@ class HomeController extends Controller
         $services = service::get();
         $travaux = Travaux::get();
         return view('frontend.home', compact('slide','services','travaux'));
+    }
+
+    public function formContact(Request $request){
+
+        $validateData = $request->validate(
+            [
+                'nom' => 'string|required|min:4',
+                'email'=>'email|required',
+                'phone' => 'string|required|min:6',
+                'pays' => 'string|required|min:2',
+                'sujet' => 'string|required|min:2',
+                'message' => 'string|required|min:4',
+            ]
+        );
+        //dd($request);
+        Contact::insert(
+            [
+                'nom' => $request->nom,
+                'email' => $request->email,
+                'phone' => $request->phone,
+                'sujet' => $request->sujet,
+                'message' => $request->message,
+                'created_at' => Carbon::now()
+            ]
+        );
+        return Redirect()->back();
     }
 }

@@ -37,7 +37,7 @@
                             <div id="orders-chart"> </div>
                         </div>
                         <div>
-                            <h4 class="mb-1 mt-1"><span data-plugin="counterup">0</span></h4>
+                            <h4 class="mb-1 mt-1"><span data-plugin="counterup">{{count($travaux)}}</span></h4>
                             <p class="text-muted mb-0">Nombre de projects</p>
                         </div>
                     </div>
@@ -80,41 +80,61 @@
             <div class="col-xl-8">
                 <div class="card">
                     <div class="card-body">
-                        <div class="float-end">
-                            <div class="dropdown">
-                                <a class="dropdown-toggle text-reset" href="#" id="dropdownMenuButton5"
-                                    data-bs-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false">
-                                    <span class="fw-semibold">Sort By:</span> <span class="text-muted">Yearly<i class="mdi mdi-chevron-down ms-1"></i></span>
-                                </a>
+                        
+                        <h4 class="card-title mb-4">Demande de Contact</h4>
 
-                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton5">
-                                    <a class="dropdown-item" href="#">Monthly</a>
-                                    <a class="dropdown-item" href="#">Yearly</a>
-                                    <a class="dropdown-item" href="#">Weekly</a>
-                                </div>
-                            </div>
-                        </div>
-                        <h4 class="card-title mb-4">Sales Analytics</h4>
 
-                        <div class="mt-1">
-                            <ul class="list-inline main-chart mb-0">
-                                <li class="list-inline-item chart-border-left me-0 border-0">
-                                    <h3 class="text-primary">$<span data-plugin="counterup">2,371</span><span class="text-muted d-inline-block font-size-15 ms-3">Income</span></h3>
-                                </li>
-                                <li class="list-inline-item chart-border-left me-0">
-                                    <h3><span data-plugin="counterup">258</span><span class="text-muted d-inline-block font-size-15 ms-3">Sales</span>
-                                    </h3>
-                                </li>
-                                <li class="list-inline-item chart-border-left me-0">
-                                    <h3><span data-plugin="counterup">3.6</span>%<span class="text-muted d-inline-block font-size-15 ms-3">Conversation Ratio</span></h3>
-                                </li>
-                            </ul>
-                        </div>
+                                        
+                                        <div class="table-responsive">
+                                            <table class="table table-centered table-nowrap mb-0">
+                                                <thead class="table-light">
+                                                    <tr>
+                                                        <th style="width: 20px;">
+                                                            <div class="form-check font-size-16">
+                                                                <input type="checkbox" class="form-check-input" id="customCheck1">
+                                                                <label class="form-check-label" for="customCheck1">&nbsp;</label>
+                                                            </div>
+                                                        </th>
+                                                        <th>ID</th>
+                                                        <th>Nom Complet</th>
+                                                        <th>Numéro</th>
+                                                        <th>Type Service</th>
+                                                        <th>Message</th>
+                                                        <th>Date</th>
+                                                        
+                
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    @foreach ( $contact as $c )
+                                                        
+                                                    
+                                                    <tr>
+                                                        <td>
+                                                            <div class="form-check font-size-16">
+                                                                <input type="checkbox" class="form-check-input" id="customCheck2">
+                                                                <label class="form-check-label" for="customCheck2">&nbsp;</label>
+                                                            </div>
+                                                        </td>
 
-                        <div class="mt-3">
-                            <div id="sales-analytics-chart" class="apex-charts" dir="ltr"></div>
-                        </div>
+                                                        <td><a href="javascript: void(0);" class="text-body fw-bold">{{$c->id}}</a> </td>
+                                                        <td>{{$c->nom}}</td>
+                                                        <td>{{$c->phone}}</td>
+                                                        <td>{{$c->sujet}}</td>
+                                                        <td>{{$c->message}}</td>
+                                                        <td>{{Carbon\carbon::parse($c->created_at)->diffForHumans() }}</td>
+                                                    </tr>
+                                                    @endforeach
+                
+                                                   
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <!-- end table-responsive -->
+                                
+                        
+
+                        
                     </div> <!-- end card-body-->
                 </div> <!-- end card-->
             </div> <!-- end col-->
@@ -241,7 +261,7 @@
             <div class="col-lg-12">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="card-title mb-4">Demande de devis</h4>
+                        <h4 class="card-title mb-4">Paiement entrants</h4>
                         <div class="table-responsive">
                             <table class="table table-centered table-nowrap mb-0">
                                 <thead class="table-light">

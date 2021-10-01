@@ -1,11 +1,15 @@
 <?php
 
+use App\Models\Contact;
+use App\Models\Travaux;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\InvoiceController;
 use App\Http\Controllers\serviceController;
 use App\Http\Controllers\TravauxController;
+use App\Http\Controllers\PaiementController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,8 +26,11 @@ Route::get('/logout', function () {
     return Redirect()->route('login');
 })->name('logout');
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+    $travaux = Travaux::get();
+  
+    $contact = Contact::get();
 
-return view('backend.dashboard');
+ return view('backend.dashboard',compact('contact','travaux'));
     //return view('dashboard');
 })->name('dashboard');
 
@@ -46,12 +53,20 @@ Route::prefix('utilisateurs')->group(function(){
     route::get('/edit/{id}',[UserController::class,'editUser'])->name('edit.user');
     route::get('/delete/{id}',[UserController::class,'deleteUser'])->name('delete.user');
     route::post('/update',[UserController::class,'updateUser'])->name('update.user');
+    route::post('/form/contact',[HomeController::class,'formContact'])->name('contact');
 });
 
-//InvoiceContrller routes
-route::get('/Factures',[InvoiceController::class,'allInvoice'])->name('show.invoice');
-route::get('/Factures/add',[InvoiceController::class,'addInvoice'])->name('add.invoice');
+//InvoiceContorller routes
+route::get('/factures',[InvoiceController::class,'allInvoice'])->name('show.invoice');
+route::get('/factures/add',[InvoiceController::class,'addInvoice'])->name('add.invoice');
 
+Route::prefix('paiement')->group(function(){
+    route::get('/',[PaiementController::class,'checkout'])->name('checkout');
+    route::post('/payaction',[PaiementController::class,'payAction'])->name('payaction');
+    route::get('/{trasaction_id}/success',[PaiementController::class,'paySuccess'])->name('paysuccess');
+    route::get('/{trasaction_id}/cancel',[PaiementController::class,'payCancel'])->name('paycancel');
+    route::any('/{pay_method}/ipn',[PaiementController::class,'ipnPaytech'])->name('paytechipn');   
+});
 
 //SliderController
 Route::prefix('slider')->group(function(){

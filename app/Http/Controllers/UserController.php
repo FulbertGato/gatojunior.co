@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use App\Models\Contact;
 use Illuminate\Http\Request;
 use Illuminate\Support\Carbon;
 
@@ -15,7 +16,6 @@ class UserController extends Controller
     public function allUser(){
 
         $users = User::all();
-       // dd($users);
         return view('backend.users.show',compact('users'));
 
     }
@@ -90,4 +90,5 @@ class UserController extends Controller
 
     }
 
+    
 }

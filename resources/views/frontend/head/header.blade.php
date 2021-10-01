@@ -2,10 +2,10 @@
 <html lang="zxx" class="no-js">
 <head>
 	<meta charset="utf-8" />
-	<title>Reevan Web Design &amp; Digital Marketing Agency HTML Template</title>
+	<title>GATOJUNIOR &amp; @yield('title')</title>
 	<meta name="description" content="Creative Agency, Marketing Agency Template">
-	<meta name="keywords" content="Creative Agency, Marketing Agency">
-	<meta name="author" content="rajesh-doot">
+	<meta name="keywords" content="Creative Agency, Marketing Agency,freelance,laravel,developer">
+	<meta name="author" content="gatojunior">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="theme-color" content="#e8f1ff">

@@ -14,7 +14,7 @@
 					</div>
 					<div class="contact-infos mt35">
 					   <div class="c-infot"> <span>Email</span> <a href="mailto:contact@gatojunior.co"><i class="fas fa-envelope"></i>contact@gatojunior.co</a> </div>
-					   <div class="c-infot"> <span>Connect on Skype</span> <a href="skype:gatojunior.co"><i class="fab fa-skype"></i> gatojunior.co</a> </div>
+					   <div class="c-infot"> <span>Connect on Skype</span> <a href="https://join.skype.com/invite/HAVeRmF4V9EF"><i class="fab fa-skype"></i> gatojunior.co</a> </div>
 					</div>
 					<div class="our-map mt40">
 					   <p class="mb5">Ma localisation</p>
@@ -26,38 +26,36 @@
 			  <div class="col-right-b">
 				 <div class="form-contact-hom">
 					<div class="form-blocks">
-					   <form action="#" method="post" name="feedback-form">
+					   <form action="{{route('contact')}}" method="post" name="feedback-form">
+						   @csrf
 						  <h3>Entrons en contact et <br>partagez votre idée.</h3>
 						  <div class="fieldsets row mt40">
 							 <div class="col-md-6">
-								<input type="text" placeholder="Full Name" name="name" class="input-ree">
+								<input type="text" placeholder="Votre Nom" name="nom" class="input-ree" required>
 							 </div>
 							 <div class="col-md-6">
-								<input type="email" placeholder="Email Address" name="email" class="input-ree">
-							 </div>
-						  </div>
-						  <div class="fieldsets row">
-							 <div class="col-md-6">
-								<input type="tel" placeholder="Contact Number" name="phone" class="input-ree">
-							 </div>
-							 <div class="col-md-6">
-								<input type="text" placeholder="Skype" name="skype" class="input-ree">
+								<input type="email" placeholder="Votre adresse Email" name="email" class="input-ree" required>
 							 </div>
 						  </div>
 						  <div class="fieldsets row">
 							 <div class="col-md-6">
-								<input type="text" placeholder="Subject" name="subject" class="input-ree">
+								<input type="telephone" placeholder="Numéro Téléphone" name="phone" class="input-ree" required>
 							 </div>
 							 <div class="col-md-6">
-								<select class="input-ree">
-								   <option value="Web Design">Web Design</option>
-								   <option>Graphic Design</option>
-								   <option>App Development</option>
-								   <option>E-commerce Development</option>
-								   <option>Digital Marketing</option>
-								   <option>Business Growth</option>
-								   <option>Business Startup</option>
-								   <option>Other...</option>
+								<input type="text" placeholder="Pays" name="pays" class="input-ree" required>
+							 </div>
+						  </div>
+						  <div class="fieldsets row">
+							 <div class="col-md-6">
+								<input type="text" placeholder="Subject"  class="input-ree">
+							 </div>
+							 <div class="col-md-6">
+								<select class="input-ree" name="sujet">
+									<option value="web">Site Web</option>
+								    <option value="Mobile">Application Mobile</option>
+									<option value="referencement">Référencement SEO / SEA</option>
+									<option value="code">Révision de code</option>
+									<option value="Autre">Autres</option>
 								</select>
 							 </div>
 						  </div>
@@ -66,10 +64,10 @@
 						  </div>
 						  <div class="custom-control custom-checkbox">
 							 <input type="checkbox" class="custom-control-input"  checked="checked" required>
-							 <label class="custom-control-label label-f-form" for="customCheck">I agree to the <a href="#">Terms &amp; Conditions</a> of gatojunior.co.</label>
+							 <label class="custom-control-label label-f-form" for="customCheck">J'accepte les <a href="#">Termes &amp; Conditions</a> de gatojunior.co.</label>
 						  </div>
 						  <div class="fieldsets mt20">
-							 <button type="submit" name="submit" class="ree-btn  ree-btn-grdt1 no-shadows">Send your inquiry <i class="fas fa-arrow-right fa-btn"></i></button>
+							 <button type="submit" name="submit" class="ree-btn  ree-btn-grdt1 no-shadows">Envoyez votre demande <i class="fas fa-arrow-right fa-btn"></i></button>
 						  </div>
 					   </form>
 					</div>
