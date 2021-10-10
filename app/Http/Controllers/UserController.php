@@ -90,5 +90,10 @@ class UserController extends Controller
 
     }
 
-    
+    public function demandeUser (){
+
+        $demandes = Contact::get();
+        return view('backend.demandes',compact('demandes'));
+
+    }
 }

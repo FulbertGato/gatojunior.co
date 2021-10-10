@@ -7,7 +7,7 @@ use App\Models\Service;
 use Illuminate\Http\Request;
 use Intervention\Image\Facades\Image;
 
-class serviceController extends Controller
+class ServiceController extends Controller
 {
     public function __construct(){
         $this->middleware('auth');
@@ -81,9 +81,9 @@ class serviceController extends Controller
                 unlink($old_icon);
                 service::find($id)->delete();
                 return Redirect()->back();
-            }else{
-                return view('backend.service.edit',compact('service'));
             }
+                return view('backend.service.edit',compact('service'));
+            
 
 
     }

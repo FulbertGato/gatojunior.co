@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\InvoiceController;
-use App\Http\Controllers\serviceController;
+use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\TravauxController;
 use App\Http\Controllers\PaiementController;
 
@@ -54,6 +54,7 @@ Route::prefix('utilisateurs')->group(function(){
     route::get('/delete/{id}',[UserController::class,'deleteUser'])->name('delete.user');
     route::post('/update',[UserController::class,'updateUser'])->name('update.user');
     route::post('/form/contact',[HomeController::class,'formContact'])->name('contact');
+    route::get('/demande',[UserController::class,'demandeUser'])->name('demandes');
 });
 
 //InvoiceContorller routes
@@ -77,11 +78,11 @@ route::post('/update/image',[HomeController::class,'updateSliderImage'])->name('
 
 //ServiceController routes
 Route::prefix('service')->group(function(){
-route::get('/',[serviceController::class,'allService'])->name('show.service');
-route::get('/add',[serviceController::class,'addService'])->name('add.service');
-route::post('/add',[serviceController::class,'addService'])->name('store.service');
-route::post('/edit',[serviceController::class,'editService'])->name('edit.service');
-route::post('/update',[serviceController::class,'updateService'])->name('update.service');
+route::get('/',[ServiceController::class,'allService'])->name('show.service');
+route::get('/add',[ServiceController::class,'addService'])->name('add.service');
+route::post('/add',[ServiceController::class,'addService'])->name('store.service');
+route::post('/edit',[ServiceController::class,'editService'])->name('edit.service');
+route::post('/update',[ServiceController::class,'updateService'])->name('update.service');
 });
 
 //TravauxController routes

@@ -79,7 +79,7 @@ class PaiementController extends Controller
         $ref_command = $request->ref_command;
         $item_name = $request->item_name;
         $item_price =  $request->item_price;
-        $devise =  $request->devise;;
+        $devise =  $request->devise;
         $command_name =  $request->command_name;
         $env = $request->env;
         $token = $request->token;

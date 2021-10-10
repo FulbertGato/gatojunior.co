@@ -111,7 +111,7 @@
                                     <span>Contact</span>
                                 </a>
                                 <ul class="sub-menu" aria-expanded="false">
-                                    <li><a href="#">Email</a></li>
+                                    <li><a href="{{route('demandes')}}">Demandes</a></li>
                                 </ul>
                             </li>
 
