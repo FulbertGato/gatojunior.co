@@ -118,4 +118,5 @@ class HomeController extends Controller
         );
         return Redirect()->back();
     }
+
 }

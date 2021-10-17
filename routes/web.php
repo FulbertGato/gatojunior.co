@@ -72,9 +72,12 @@ Route::prefix('paiement')->group(function(){
 //SliderController
 Route::prefix('slider')->group(function(){
 route::get('/show',[HomeController::class,'showSlider'])->name('slider.store');
+
 route::post('/update',[HomeController::class,'updateSlider'])->name('update.slide');
 route::post('/update/image',[HomeController::class,'updateSliderImage'])->name('update.slide.image');
 });
+
+
 
 //ServiceController routes
 Route::prefix('service')->group(function(){

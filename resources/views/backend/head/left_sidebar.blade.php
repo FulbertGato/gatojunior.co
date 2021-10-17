@@ -124,48 +124,21 @@
                             <li>
                                 <a href="javascript: void(0);" class="has-arrow waves-effect">
                                     <i class="uil-flask"></i>
-                                    <span>Home</span>
+                                    <span>Accueil</span>
                                 </a>
                                 <ul class="sub-menu" aria-expanded="false">
                                     
                                     <li><a href="{{route('slider.store')}}">Silder</a></li>
                                     
                                 </ul>
+
+                                
                             </li>
 
-                            <li>
-                                <a href="javascript: void(0);" class="has-arrow waves-effect">
-                                    <i class="uil-list-ul"></i>
-                                    <span>Quote Page</span>
-                                </a>
-                                <ul class="sub-menu" aria-expanded="false">
-                                    <li><a href="#">Bootstrap Basic</a></li>
-                                </ul>
-                            </li>
-
-                            <li>
-                                <a href="javascript: void(0);" class="has-arrow waves-effect">
-                                    <i class="uil-list-ul"></i>
-                                    <span>Portfolio Page</span>
-                                </a>
-                                <ul class="sub-menu" aria-expanded="false">
-                                    <li><a href="#">Bootstrap Basic</a></li>
-                                    
-                                </ul>
-                            </li>
+                           
 
 
 
-                            <li>
-                                <a href="javascript: void(0);" class="has-arrow waves-effect">
-                                    <i class="uil-streering"></i>
-                                    <span>Footer page</span>
-                                </a>
-                                <ul class="sub-menu" aria-expanded="false">
-                                    <li><a href="#">Unicons</a></li>
-                                   
-                                </ul>
-                            </li>
 
 
 
