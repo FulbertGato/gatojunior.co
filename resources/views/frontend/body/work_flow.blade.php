@@ -30,7 +30,7 @@
 								<img src="{{asset('frontend/images/icons/creativity.svg')}}" alt="service" class="icon70 mb20">
 							</div>
 							<h4>Design</h4>
-							<p>Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. </p>
+							<p>Il s'agit de la phase de conception Web du projet. Le but est de fournir une représentation graphique pour visualiser l'apparence du site. </p>
 						</div>
 					</div>
 				</div>
@@ -42,7 +42,7 @@
 								<img src="{{asset('frontend/images/icons/prototype.svg')}}" alt="service" class="icon70 mb20">
 							</div>
 							<h4>Prototype</h4>
-							<p>Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. </p>
+							<p>Il s'agit de convertir le modèle graphique en code à afficher dans le navigateur .  </p>
 						</div>
 					</div>
 				</div>
@@ -54,7 +54,7 @@
 								<img src="{{asset('frontend/images/icons/computer.svg')}}" alt="service" class="icon70 mb20">
 							</div>
 							<h4>Développement</h4>
-							<p>Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. </p>
+							<p>Il s'agit de convertir le modèle graphique en code </p>
 						</div>
 					</div>
 				</div>

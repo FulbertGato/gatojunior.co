@@ -24,6 +24,12 @@
                                                 <label class="form-label">Nom</label>
                                                 <input type="text" class="form-control" required name="name" />
                                             </div>
+
+
+                                            <div class="mb-3">
+                                                <label class="form-label">Lien</label>
+                                                <input type="url" class="form-control" required name="lien" />
+                                            </div>
                                             <div class="mb-3">
                                                 <label class="form-label">Technologie </label>
                                                 <div>

@@ -27,6 +27,11 @@
                     </div>
 
                     <div class="mb-3">
+                        <label class="form-label">Lien</label>
+                        <input type="text" class="form-control" required value="{{$t->lien}}" name="lien" />
+                    </div>
+
+                    <div class="mb-3">
                         <label class="form-label">Technologies</label>
                         <input type="text" class="form-control" required value="{{$t->technologie}}" name="technologie" />
                     </div>

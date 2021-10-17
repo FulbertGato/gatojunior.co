@@ -1,4 +1,5 @@
-
+@extends('backend.index')
+@section('content')
                                     <h4 class="mb-0">Products</h4>
 
                                     <div class="page-title-right">

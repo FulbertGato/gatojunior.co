@@ -14,6 +14,7 @@ class Travaux extends Model
         'slug',
         'description',
         'technologie',
+        'lien',
         
     ];
 }

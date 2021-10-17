@@ -18,9 +18,10 @@
                 <div class="full-work-block  owl-carousel">
 
                     @foreach ( $travaux as $t )
+                    
                     <div class="fwb-main-x fwb-a">
                         <div class="work-thumbnails">
-                        <a href="#"><img src="{{asset('frontend/images/portfolio/portfolio-1.jpg')}}" alt="portfolio reevan" class="img-fluid"> </a>
+                        <a href="{{$t->lien}}"  target="_blank"><img src="{{asset($t->image_travaux)}}" alt="portfolio reevan" class="img-fluid"> </a>
                         </div>
                         <div class="work-details">
                             <p class="mb10">{{$t->nom}} : {{$t->technologie}}</p>

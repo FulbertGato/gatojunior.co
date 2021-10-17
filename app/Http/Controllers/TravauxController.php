@@ -33,6 +33,7 @@ class TravauxController extends Controller
                     'technologie' => 'string|required|min:4',
                     'description'=> 'string|required',
                     'image_travaux' => 'required|mimes:png,jpg,jpeg,svg',
+                    'lien' => 'required',
                     
                 ]);
 
@@ -49,6 +50,7 @@ class TravauxController extends Controller
                     'description'=>$request->description,
                     'slug' => strtolower(str_replace(' ', '-', $request->name)),
                     'image_travaux'=>$last_img,
+                    'lien' =>$request->lien, 
                     'created_at' => Carbon::now()
                     ]);
                     return Redirect()->route('show.travaux');
@@ -59,6 +61,7 @@ class TravauxController extends Controller
     public function editTravaux(Request $request){
         $id = $request->id;
         $t = Travaux::find($id);
+       // $slug=$t->slug;
         if($t==null){
             return Redirect()->route('show.travaux');
         }
@@ -70,6 +73,7 @@ class TravauxController extends Controller
             Travaux::find($id)->delete();
             return Redirect()->back();
         }else{
+           
             return view('backend.travaux.edit',compact('t'));
         }
 
@@ -85,8 +89,6 @@ class TravauxController extends Controller
 
         $old_image = $request->old_image;
         $image_travaux = $request->file('image_travaux');
-      
-
         if($image_travaux){
             $name_gen = hexdec(uniqid());
             $img_ext = strtolower($image_travaux->getClientOriginalExtension());
@@ -109,6 +111,8 @@ class TravauxController extends Controller
             'nom'=>$request->name,
             'description'=>$request->description,
             'technologie' =>$request->technologie,
+            'lien' =>$request->lien, 
+        
         ]);
 
         return Redirect()->route('show.travaux');
