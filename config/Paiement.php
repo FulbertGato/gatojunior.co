@@ -23,9 +23,9 @@ class Paiement {
             ->setCurrency('XOF')
             ->setRefCommand(uniqid())
             ->setNotificationUrl([
-                'ipn_url' =>     'https://localhost:7000/paiement/paytech/ipn', //only https
-                'success_url' => 'http://localhost:7000/paiement/'.$ref.'/success',
-                'cancel_url' =>  'http://localhost:7000/paiement/'.$ref.'/cancel',
+                'ipn_url' =>     env('APP_URL').'paiement/paytech/ipn', //only https
+                'success_url' => env('APP_URL').'/paiement/'.$ref.'/success',
+                'cancel_url' =>  env('APP_URL').'paiement/'.$ref.'/cancel',
             ])->send();
 
      
