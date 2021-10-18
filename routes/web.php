@@ -63,10 +63,12 @@ route::get('/factures/add',[InvoiceController::class,'addInvoice'])->name('add.i
 
 Route::prefix('paiement')->group(function(){
     route::get('/',[PaiementController::class,'checkout'])->name('checkout');
+    route::get('/list',[PaiementController::class,'allPaiement'])->name('show.paiement')->middleware('auth');
     route::post('/payaction',[PaiementController::class,'payAction'])->name('payaction');
     route::get('/{trasaction_id}/success',[PaiementController::class,'paySuccess'])->name('paysuccess');
     route::get('/{trasaction_id}/cancel',[PaiementController::class,'payCancel'])->name('paycancel');
-    route::any('/{pay_method}/ipn',[PaiementController::class,'ipnPaytech'])->name('paytechipn');   
+    route::any('/{pay_method}/ipn',[PaiementController::class,'ipn']);
+    
 });
 
 //SliderController

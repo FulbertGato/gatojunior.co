@@ -46,7 +46,8 @@ class Paiement {
 
     public function paygate(array $data){
         extract($data);
-        header("Location:https://paygateglobal.com/v1/page?token=".env('PAYGATE_TOKEN')."&amount=$montant&description=$nom&identifier=$transaction_id");    
+        $url_success = env('APP_URL')."/paiement/$transaction_id/success/";
+        header("Location:https://paygateglobal.com/v1/page?token=".env('PAYGATE_TOKEN')."&amount=$montant&description=$nom&identifier=$transaction_id&url=$url_success");    
     }
 }
     

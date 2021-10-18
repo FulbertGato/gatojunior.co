@@ -14,6 +14,8 @@ class Paiement extends Model
         'nom_client',
         'pay_method',
         'transaction_id',
+        'transaction_numero',
+        'tel_paiement',
         'note',
         'status',
     ];

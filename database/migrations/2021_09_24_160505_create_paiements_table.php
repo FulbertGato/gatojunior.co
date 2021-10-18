@@ -20,6 +20,8 @@ class CreatePaiementsTable extends Migration
             $table->string('nom_client');
             $table->string('pay_method');
             $table->string('transaction_id');
+            $table->string('transaction_numero');
+            $table->string('tel_paiement');
             $table->string('status');
             $table->text('note')->nullable;
             $table->timestamps();

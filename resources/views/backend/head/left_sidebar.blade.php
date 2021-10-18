@@ -99,8 +99,20 @@
                                     <span>Factures</span>
                                 </a>
                                 <ul class="sub-menu" aria-expanded="false">
-                                    <li><a href="{{route('show.invoice')}}">Listes de facture</a></li>
-                                    <li><a href="{{route('add.invoice')}}">Ajouter facture</a></li>
+                                    <li><a href="#">Listes de facture</a></li>
+                                    <li><a href="#">Ajouter facture</a></li>
+
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                    <i class="uil-invoice"></i>
+                                    <span>Paiements</span>
+                                </a>
+                                <ul class="sub-menu" aria-expanded="false">
+                                    <li><a href="{{route('show.paiement')}}">Listes les paiements</a></li>
+                                    <li><a href="{{route('checkout')}}">Enregistrer un paiement</a></li>
 
                                 </ul>
                             </li>
