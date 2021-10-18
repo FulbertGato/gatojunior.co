@@ -5,7 +5,7 @@
             <div class="row flx-end">
                 <div class="col-lg-6">
                     <div class="sec-heading m-center">
-                        <span class="sub-heading mb15">DEMANDE</span>
+                        <span class="sub-heading mb15">DEMANDES</span>
                         <h2 class="mb15"><span class="ree-text rt40">Approuvé</span> par les milliers</h2>
                         <p>Nous serions heureux d'avoir de vos nouvelles, veuillez remplir le formulaire ci-dessous ou envoyez-nous vos besoins par courrier</p>
                     </div>
@@ -15,7 +15,7 @@
                             <li><img src="{{asset('frontend/images/brand-logo/amak.png')}}" alt="logo"></li>
                             <li><img src="{{asset('frontend/images/brand-logo/baltyshop.jpeg')}}" alt="logo"></li>
                             <li><img src="{{asset('frontend/images/brand-logo/groupekassir.png')}}" alt="logo"></li>
-                            <li><img src="{{asset('frontend/images/brand-logo/partner-logo-5.svg')}}" alt="logo"></li>
+                            <li><img src="{{asset('frontend/images/brand-logo/souley.jpeg')}}" alt="logo"></li>
                             <li><img src="{{asset('frontend/images/brand-logo/partner-logo-6.svg')}}" alt="logo"></li>
 
                         </ul>
@@ -85,7 +85,7 @@
                                     </div>
                                     <div class="fieldsets"><textarea placeholder="Message" name="message"></textarea></div>
                                     <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="customCheck" name="example1" checked="checked">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck"  checked="checked">
                                         <label class="custom-control-label label-f-form" for="customCheck">I agree to the <a href="#">Terms &amp; Conditions</a> of gatojunior.co .</label>
                                     </div>
                                     <div class="fieldsets mt20"> <button type="submit" name="submit" class="ree-btn  ree-btn-grdt1 w-100">envoyez votre demande <i class="fas fa-arrow-right fa-btn"></i></button> </div>

@@ -76,17 +76,7 @@
 												</a>
 											</div>
 										</div>
-										<div class="col-lg-2 col-md-3 col-sm-4 col-6">
-											<div class="icon-with-title">
-												<a href="javascript:void(0)">
-													<div class="iwt-icon"> <img src="{{asset('frontend/images/icons/physics.svg')}}"
-															alt="React Native"> </div>
-													<div class="iwt-content">
-														<p>React Native</p>
-													</div>
-												</a>
-											</div>
-										</div>
+										
 										<div class="col-lg-2 col-md-3 col-sm-4 col-6">
 											<div class="icon-with-title">
 												<a href="javascript:void(0)">
@@ -139,17 +129,7 @@
 												</a>
 											</div>
 										</div>
-										<div class="col-lg-2 col-md-3 col-sm-4 col-6">
-											<div class="icon-with-title">
-												<a href="javascript:void(0)">
-													<div class="iwt-icon"> <img src="{{asset('frontend/images/icons/Npm-logo.svg')}}"
-															alt="Npm-logo"> </div>
-													<div class="iwt-content">
-														<p>Npm </p>
-													</div>
-												</a>
-											</div>
-										</div>
+										
 										
 										<div class="col-lg-2 col-md-3 col-sm-4 col-6">
 											<div class="icon-with-title">
@@ -184,17 +164,7 @@
 												</a>
 											</div>
 										</div>
-										<div class="col-lg-2 col-md-3 col-sm-4 col-6">
-											<div class="icon-with-title">
-												<a href="javascript:void(0)">
-													<div class="iwt-icon"> <img src="{{asset('frontend/images/icons/Node.js_logo.svg')}}"
-															alt="Node.js_logo"> </div>
-													<div class="iwt-content">
-														<p>Node.JS</p>
-													</div>
-												</a>
-											</div>
-										</div>
+										
 									</div>
 								</div>
 							</div>
@@ -340,18 +310,7 @@
 											</div>
 										</div>
 
-										<div class="col-lg-2 col-md-3 col-sm-4 col-6">
-											<div class="icon-with-title">
-												<a href="javascript:void(0)">
-													<div class="iwt-icon"> <img src="{{asset('frontend/images/icons/wix.svg')}}" alt="wix">
-													</div>
-													<div class="iwt-content">
-														<p>Wix</p>
-													</div>
-												</a>
-											</div>
-										</div>
-
+										
 										
 
 										<div class="col-lg-2 col-md-3 col-sm-4 col-6">
@@ -360,7 +319,7 @@
 													<div class="iwt-icon"> <img src="{{asset('frontend/images/icons/woo.svg')}}"
 															alt="WooCommerce"> </div>
 													<div class="iwt-content">
-														<p>Woo Commerce</p>
+														<p>WooCommerce</p>
 													</div>
 												</a>
 											</div>
