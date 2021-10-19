@@ -24,19 +24,14 @@ class Paiement {
             ->setRefCommand(uniqid())
             ->setNotificationUrl([
                 'ipn_url' =>     env('APP_URL').'paiement/paytech/ipn', //only https
-                'success_url' => env('APP_URL').'/paiement/'.$ref.'/success',
+                'success_url' => env('APP_URL').'paiement/'.$ref.'/success',
                 'cancel_url' =>  env('APP_URL').'paiement/'.$ref.'/cancel',
             ])->send();
 
      
      //dd($jsonResponse);
      if($jsonResponse['success']==1){
-
       header("Location:".$jsonResponse['redirect_url']);
-
-       
-        
-        
      }else{
         dd($jsonResponse);
      }
